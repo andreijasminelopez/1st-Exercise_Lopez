@@ -1,0 +1,66 @@
+Andrei Jasmine Lopez BSIS02
+2. Student Grade Analyzer
+
+using System;
+
+public class HelloWorld
+{
+    public static void Main(string[] args)
+    {
+        Console.Write("Enter Quiz score: ");
+        double quiz = Convert.ToDouble(Console.ReadLine());
+
+        Console.Write("Enter Midterm score: ");
+        double midterm = Convert.ToDouble(Console.ReadLine());
+
+        Console.Write("Enter Final Exam score: ");
+        double final = Convert.ToDouble(Console.ReadLine());
+
+        double finalGrade = quiz * 0.20 + midterm * 0.30 + final * 0.50;
+
+        bool grade1 = finalGrade >= 90;
+        bool grade2 = finalGrade >= 75 && finalGrade < 90;
+        bool grade3 = finalGrade < 75;
+
+        Console.WriteLine("\nStudent Grade Analyzer");
+        Console.WriteLine("Quiz score: " + quiz);
+        Console.WriteLine("Midterm score: " + midterm);
+        Console.WriteLine("Final Exam score: " + final);
+        Console.WriteLine("Final Grade: " + finalGrade);
+
+        Console.WriteLine("is 90 and above? " + grade1);
+        Console.WriteLine("75-89?  " + grade2);
+        Console.WriteLine("Below 75? " + grade3);
+
+    }
+}
+
+5 Inputs
+using System;
+
+public class LopezProjects2
+{
+    public static void Main(string[] args)
+    {
+        Console.Write("What is your name: ");
+        string name = Console.ReadLine()!;
+
+        Console.Write("How old are you: ");
+        int age = Convert.ToInt32(Console.ReadLine());
+
+        Console.Write("Where do you live: ");
+        string address = Console.ReadLine()!;
+
+        Console.Write("What is your favorite drink: ");
+        string drink = Console.ReadLine()!;
+
+        Console.Write("What is your favorite food: ");
+        string food = Console.ReadLine()!;
+
+        Console.WriteLine("Name: " + name);
+        Console.WriteLine("Age: " + age);
+        Console.WriteLine("Address: " + address);
+        Console.WriteLine("Favorite Drink: " + drink);
+        Console.WriteLine("Favorite Food: " + food);
+    }
+}
