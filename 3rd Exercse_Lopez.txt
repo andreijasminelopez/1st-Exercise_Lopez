@@ -1,0 +1,118 @@
+ODD OR EVEN 
+
+namespace LopezProjects
+{
+    public partial class OddOrEven : Form
+    {
+        public OddOrEven()
+        {
+            InitializeComponent();
+        }
+
+        private void Form1_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void textBox1_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btnCheck_Click(object sender, EventArgs e)
+        {
+            int number = Convert.ToInt32(txtNumber.Text);
+
+            if (number % 2 == 0)
+            {
+                lblResultCheck.Text = "The number is even.";
+            }
+            else
+            {
+                lblResultCheck.Text = "The number is odd.";
+            }
+        }
+
+        private void label1_Click_1(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label1_Click_2(object sender, EventArgs e)
+        {
+
+        }
+    }
+}
+
+NEGATIVE OR POSITIVE 
+
+using System.Numerics;
+using System.Reflection.Emit;
+using static System.Runtime.InteropServices.JavaScript.JSType;
+using static System.Windows.Forms.VisualStyles.VisualStyleElement;
+
+namespace LopezProjects
+{
+    public partial class OddOrEven : Form
+    {
+        public OddOrEven()
+        {
+            InitializeComponent();
+        }
+
+        private void Form1_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void textBox1_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btnCheck_Click(object sender, EventArgs e)
+        {
+            int number = Convert.ToInt32(txtNumber.Text);
+
+            if (number > 0)
+            {
+                lblResultCheck.Text = "The number is positive.";
+            }
+            else if (number < 0)
+            {
+                lblResultCheck.Text = "The number is negative.";
+            }
+            else
+            {
+                lblResultCheck.Text = "The number is zero.";
+            }
+        }
+
+        private void label1_Click_1(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label1_Click_2(object sender, EventArgs e)
+        {
+
+        }
+    }
+}
+
+
+
+
+
+
